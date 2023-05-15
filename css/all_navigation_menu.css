@@ -1,0 +1,268 @@
+.header {
+  background-color: #2b2d42;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.navigation_menu {
+  display: flex;
+  width: 100%;
+  height: 100px;
+}
+
+.menu {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+}
+
+.menu_item {
+  min-width: 9em;
+  cursor: pointer;
+  font-size: 20px;
+  border-radius: 100px;
+}
+
+.header_logo {
+  position: relative; /*Why this position is relative?*/
+  left: 0px;
+  top: 6px;
+  cursor: pointer;
+}
+
+.menu_item a {
+  cursor: pointer;
+  color: #ffffff;
+  padding: 0.8rem 1.5rem 0.8rem 1.5rem;
+  font-size: 18px;
+  transition: 0.6s ease;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+}
+
+.menu_item a:hover {
+  color: #bf9b30;
+  background-color: #ffffff;
+  border-radius: 60px;
+  font-weight: bold;
+  font-size: 19px;
+}
+
+.menu_item.active a {
+  color: #bf9b30;
+  background-color: #ddd;
+  border-radius: 100px;
+  font-weight: bold;
+  font-size: 19px;
+}
+.toggle-btn {
+  display: none;
+}
+.sidebar_menu {
+  display: none;
+}
+.scroll-locked {
+  overflow: hidden;
+}
+
+@media screen and (max-width: 991px) {
+  .header_logo {
+    left: -50px;
+  }
+  .logo {
+    height: 100px;
+  }
+  ul {
+    height: 100px;
+  }
+  .menu_item {
+    display: none;
+  }
+  .fa-solid {
+    font-style: unset;
+    font-size: 3vw;
+  }
+  .toggle-btn {
+    display: inline;
+    background: none;
+    color: #ddd;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    margin-left: 50px;
+    z-index: 2;
+  }
+  .sidebar {
+    height: 100vh;
+    width: 0%;
+    background-color: #383535;
+    position: absolute;
+    z-index: 5;
+  }
+  .sidebar_menu {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+  }
+  .sidebar_item {
+    min-width: 9em;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 100px;
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+  }
+  .sidebar_item {
+    cursor: pointer;
+    height: 14%;
+    color: #ffffff;
+    padding: 0.8rem 1.5rem 0.8rem 1.5rem;
+    font-size: 24px;
+    transition: 0.6s ease;
+    font-family: "Poppins", sans-serif;
+  }
+  .sidebar_item a {
+    color: #ddd;
+    font-size: 26px;
+  }
+  .hidden {
+    opacity: 0;
+  }
+  .sidebar a:visited {
+    color: #fff;
+  }
+  .sidebar_item.active a {
+    color: #d59620;
+  }
+  .sidebar_item a:hover {
+    border-width: 0 0 1px;
+    border-style: solid;
+    border-color: red;
+    color: #d59620;
+  }
+  .sidebar_menu:before {
+    height: 0.113rem;
+    content: "";
+    margin-top: 0.5rem;
+    margin-bottom: 0.688rem;
+    display: block;
+    background-color: #917b4c;
+  }
+  .sidebar ul {
+    height: 50%;
+    margin-left: 40px;
+    margin-top: 50px;
+  }
+
+  .show-nav {
+    width: 50%;
+    animation: expand 1s;
+    transition: opacity 1s ease-in-out;
+    opacity: 0.9;
+  }
+  .hide-nav {
+    width: 0%;
+    animation: collapse 1s;
+    transition: opacity 1s ease-in-out;
+  }
+  @keyframes expand {
+    0% {
+      opacity: 0.6;
+      width: 0%;
+    }
+    100% {
+      opacity: 0.9;
+      width: 50%;
+    }
+  }
+  @keyframes collapse {
+    0% {
+      opacity: 0.9;
+      width: 50%;
+    }
+    100% {
+      opacity: 0.6;
+      width: 0%;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) and (min-width: 601px) {
+  .grid-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .menu_item {
+    display: none;
+  }
+  .sidebar_item a {
+    font-size: 30px;
+    color: #ddd;
+  }
+  .show-nav {
+    width: 50%;
+    animation: expand 1s;
+    transition: opacity 1s ease-in-out;
+    opacity: 0.9;
+  }
+  .hide-nav {
+    width: 0%;
+    animation: collapse 1s;
+    transition: opacity 1s ease-in-out;
+  }
+  @keyframes expand {
+    0% {
+      opacity: 0.6;
+      width: 0%;
+    }
+    100% {
+      opacity: 0.9;
+      width: 50%;
+    }
+  }
+  @keyframes collapse {
+    0% {
+      opacity: 0.9;
+      width: 50%;
+    }
+    100% {
+      opacity: 0.6;
+      width: 0%;
+    }
+  }
+}
+@media screen and (max-width: 600px) {
+  .show-nav {
+    width: 100%;
+    animation: expand 1s;
+    transition: opacity 1s ease-in-out;
+    opacity: 0.9;
+  }
+  .hide-nav {
+    width: 0%;
+    animation: collapse 1s;
+    transition: opacity 1s ease-in-out;
+  }
+  @keyframes expand {
+    0% {
+      opacity: 0.6;
+      width: 0%;
+    }
+    100% {
+      opacity: 0.9;
+      width: 100%;
+    }
+  }
+  @keyframes collapse {
+    0% {
+      opacity: 0.9;
+      width: 100%;
+    }
+    100% {
+      opacity: 0.6;
+      width: 0%;
+    }
+  }
+}

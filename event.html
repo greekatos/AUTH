@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/solid.min.css">
+    <link rel="stylesheet" href="css/all_navigation_menu.css" />
+    <link rel="stylesheet" href="css/all_footer_menu.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/main_style.css">
+    <link rel="stylesheet" href="css/event/event.css">
+    <script src="js/views/style.js"></script>
+    
+
+  </head>
+  <body>
+    <div class="header">
+      <button class="toggle-btn" id='toggle-btn'><i class="fa-solid fa-bars"></i></button>
+      <div class="navigation_menu">
+        <ul class="menu">
+          <li class="menu_item">
+            <a href="home.html">Home</a>
+          </li>
+
+          <li class="menu_item active">
+            <a href="events_list.html">Events</a>
+          </li>
+
+          <div class="header_logo">
+            <img
+              src="Images/Front-End_logo-removebg-preview.png"
+              class="logo"
+              alt="Logo"
+            />
+          </div>
+
+          <li class="menu_item">
+            <a href="exhibitions_list.html">Exhibitions</a>
+          </li>
+
+          <li class="menu_item">
+            <a href="reservation.html">Reservations</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+<div class="sidebar" id='sidebar'>
+        <ul class="sidebar_menu ">
+            <div class="sidebar_item hidden">
+                <li >
+                    <a href="home.html">Home</a>
+                </li>
+            </div>
+            <div class="sidebar_item active hidden">
+                <li >
+                  <a href="events_list.html">Events</a>
+                </li>
+            </div>
+          <div class="sidebar_item hidden">
+              <li  >
+                <a href="exhibitions_list.html">Exhibitions</a>
+              </li>
+          </div>
+          <div class="sidebar_item hidden">
+              <li >
+                <a href="reservation.html">Reservations</a>
+              </li>
+          </div>
+        </ul>
+      </div> 
+    <div class="events">  
+        <div class='page-title event_type'></div>
+      <div class="event_title"></div> 
+      <div class='event-content'>
+        <div class="event_img"></div> 
+        <div class='event-text'>
+          <div class="event_date"></div>
+          <div class="event_desc"></div> 
+        </div>
+      </div> 
+    </div>
+    <div class="footer_menu">
+        <div class="inner_footer">
+            <div class="footer_logo">
+                <img src="Images/Front-End_logo-removebg-preview.png" class="logo" alt="Logo">
+                <p>
+                  &#169 2023 Archaeological Museum of Thessaloniki
+                </p>
+                <p>
+                  Manoli Andronikou 6, 540 13 Thessaloniki, Greece
+                </p>
+                <h3 class="help">Links</h3>
+                <ul>
+                    <li>
+                        <a href="#"> Ministry of Culture and Sports </a>
+                    </li>
+                    <li>
+                        <a href="#"> Archaeological Resources and Expropriations Fund </a>
+                    </li>
+                    <li>
+                        <a href="#"> Friends of A.M.Th. Archaeological </a>
+                    </li>
+                    <li>
+                        <a href="#"> Project of Macedonia Thrace </a>
+                    </li>
+                    <li>
+                        <a href="#"> Thessaloniki Tourism Organization </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-parts">
+                
+                <div class="footer_part">
+                    <h2 class="help"> Need Help? </h2>
+
+                    <p>Terms &amp; Conditions</p>
+                    <p>Provicy Policy</p>
+                </div>
+                
+                <div class="footer_part">
+                    <h2 class="help">Navigate</h2>
+                    <span>
+                        <div class="href-footer">
+                            <a id="foot-link" href="#home">Home</a>
+                        </div>
+                        <div class="href-footer">
+                            <a id="foot-link" href="#Events">Events</a>
+                        </div>
+                        <div class="href-footer">
+                            <a id="foot-link" href="#Exhibitions">Exhibitions</a>
+                        </div>
+                        <div class="href-footer">
+                            <a id="foot-link" href="#Reservations">Reservations</a>
+                        </div>
+                    </span>
+                </div>
+                
+                <div class="footer_part">
+                    <h2 class="help">Contact</h2>
+                    <span>
+                        <div class="contact-info">
+                            <ul>
+                                <li>
+                                    <img src="Images/phone.png"> <a href="2313310201" class="contact-details">2313 310201</a>
+                                </li>
+                                <li>
+                                    <img src="Images/fax.png"> <a href="2310458574" class="contact-details">2310 458574</a>
+                                </li>
+                                <li>
+                                    <img src="Images/email.png"> <a href="amth@culture.gr" class="contact-details">amth@culture.gr</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </span>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    </div>
+  </body>
+  <script src="js/create_events.js"></script>
+   <script src="js/views/navToggle.js"></script>
+    <script src="js/event_data.js"></script>
+</html>

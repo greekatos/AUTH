@@ -1,0 +1,107 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body {
+  background-color: #f0f3f7;
+}
+h1,
+h2 {
+  color: #333;
+}
+h1 {
+  padding-top: 1.5rem;
+  font-size: 2.5rem;
+  line-height: 1.75rem;
+  margin-bottom: 0.875rem;
+}
+h2 {
+  font-family: "Arimo", sans-serif;
+  font-weight: 600;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  text-transform: uppercase;
+  padding-bottom: 0.875rem;
+  letter-spacing: 0.25px;
+  text-align: left;
+}
+p {
+  color: #333;
+  font-size: 1rem;
+  line-height: 1.75rem;
+  letter-spacing: 0.05em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 14px;
+  margin-bottom: 14px;
+  max-width: 600px;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 1.7rem;
+    line-height: 1.25rem;
+  }
+  h2 {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+  p {
+    font-size: 1rem;
+    line-height: 1.6rem;
+    letter-spacing: 0.05em;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    padding-top: 1rem;
+    font-size: 1.5rem;
+    line-height: 1.6rem;
+    margin-bottom: 0.5rem;
+  }
+  h2 {
+    font-family: "Arimo", sans-serif;
+    font-weight: 500;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    text-transform: uppercase;
+    padding-bottom: 0.875rem;
+    letter-spacing: 0.25px;
+    text-align: left;
+  }
+  p {
+    color: #333;
+    font-size: 1rem;
+    line-height: 1.75rem;
+    letter-spacing: 0.05em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 14px;
+    margin-bottom: 14px;
+  }
+}
+.content {
+  height: 100vh;
+}
